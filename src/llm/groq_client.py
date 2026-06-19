@@ -19,6 +19,14 @@ class GroqClient:
         3. DO NOT assume facts.
         4. DO NOT infer replenishment needs unless 
             Stock Level < Reorder Level
+        5. If no relevant documents are retrieved,
+            return:
+            Answer:
+            Insufficient evidence available.
+            Risks:
+            None
+            Explanation:
+            The available knowledge base does not contain enough information to answer this question.
             
         User Query:
         {query}
