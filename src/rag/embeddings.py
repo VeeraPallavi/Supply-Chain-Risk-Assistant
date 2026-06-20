@@ -6,4 +6,5 @@ class EmbeddingGenerator:
         self.model = SentenceTransformer(model_name)
 
     def generate(self, texts):
-        return self.model.encode(texts,show_progress_bar=True)
+        return self.model.encode(texts, show_progress_bar=False)
+    
